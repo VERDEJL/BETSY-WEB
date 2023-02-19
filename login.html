@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=j, initial-scale=1.0">
+        <title>betsy</title>
+        <link rel="preload" href="normalize.css" as="style">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1> <img class="logo" src="img/betsy3.png" alt="logo"> </h1>
+        </header>
+    
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor">
+                <a href="index.php">Inicio</a>
+                <a href="nosotros.php">Quienes somos</a>
+                <!-- <a href="#">Ventas</a> -->
+                <div class="dropdown">
+                    <button class="dropbtn">Catálogo
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="hombres.php">Hombre</a>
+                      <a href="mujeres.php">Mujer</a>
+                      <a href="hombres.php">Niños</a>
+                    </div>
+                  </div>
+                <!--<a href="#">Clientes</a>-->
+                <a href="contacto.php">Contacto</a>
+                <a href="login.php">Login</a>
+            </nav>
+        </div>
+        <p>   Inicio -> LOGIN</p>
+
+    <main class="contenedor sombra">
+        <section>
+            <h2>INICIA SESION</h2>
+
+            <form class="contacto__formulario" action="validar.php" method="POST">
+                <fieldset>
+                    <legend>LOGIN</legend>
+                    <div class="contenedor-login">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            	<input name="nombre" class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+                        <br>
+                        <div class="campo">
+                            <label>Constraseña</label>
+                            <input name="pass" class="input-text" type="password" placeholder="Tu Constraseña">
+                        </div>
+                        
+                    </div>
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+        <footer class="footer">
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &#174;Betsy. <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="4" />
+                <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+              </svg> contacto@Betsy.com 
+            <a href="tel:8717819233"> </a> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              </svg>  8717819233 </p>
+        </footer>
+
+    </body>
+</html>
